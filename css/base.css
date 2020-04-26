@@ -16,6 +16,10 @@ body{
     max-height: 0px;
     overflow: hidden;
     padding: 0 0 0 50px;
+    z-index: 1000;
+    position: absolute;
+    background-color: white;
+    padding: 10px 20px 10px 50px;
 }
 
 
@@ -33,11 +37,20 @@ input:checked ~ label{
 
 input:checked ~ .menu-content{
     max-height: 100%;
+    border: 1px solid;
 }
 
-.collapsible-menu ul{
+.collapsible-menu ul {
     list-style-type: none;
     padding: 0;
+}
+
+.collapsible-menu ul li {
+    transition: transform .2s;
+}
+
+.collapsible-menu ul li:hover {
+    transform: scale(1.2);
 }
 
 .collapsible-menu label{
