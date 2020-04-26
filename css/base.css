@@ -40,6 +40,7 @@ input:checked ~ .menu-content{
 }
 
 .collapsible-menu label{
+    height: 22px;
     float: left;
     cursor: pointer;
     background: url(../img/burger.png) no-repeat left center;
@@ -47,6 +48,8 @@ input:checked ~ .menu-content{
     padding: 10px 0 10px 50px;
     text-align: center;
     display: block;
+    zoom: 0.6;
+    margin-top: 17px;
 }
 
 input#menu{
@@ -107,20 +110,27 @@ nav h1{
     line-height: 0.1em;
     margin: 10px 0 20px; 
     margin: 0px;
- } 
+} 
  
 .lineSpanClass{ 
-     background:#fff; 
-     padding:0 10px; 
- }
+    background:#fff; 
+    padding:0 10px; 
+}
 
- .img-content{
-     padding: 30px;
-     padding-right: 30px;
-     width: inherit;
- }
+.button-container{
+    text-align: center;
+}
+.img-content{
+    padding: 30px;
+    padding-right: 30px;
+    width: inherit;
+}
 
- .img-button-rcmd{
+.img-text {
+    color: black;
+}
+
+.img-button-rcmd{
     border: black;
     background-color: black;
     color: white;
@@ -130,25 +140,25 @@ nav h1{
     text-decoration: none;
     display: inline-block;
     font-size: 10px;
- }
+}
 
- .flex-container {
+.flex-container {
     display: flex;
     align-items: center;
     padding: 30px;
     justify-content: space-around;
-  }
+}
 
- #responsive div{
+#responsive div{
      text-align: center;
- }
+}
 
- #content{
+#content{
      padding-top: 40px;
      padding-left: 50px;
      padding-right: 50px;
      padding-bottom: 40px;
- }
+}
 
 #footer{
     background-color: #ffdacf;
