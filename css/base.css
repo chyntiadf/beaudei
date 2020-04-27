@@ -37,7 +37,7 @@ input:checked ~ label{
 
 input:checked ~ .menu-content{
     max-height: 100%;
-    border: 1px solid;
+    
 }
 
 .collapsible-menu ul {
@@ -49,9 +49,9 @@ input:checked ~ .menu-content{
     transition: transform .2s;
 }
 
-.collapsible-menu ul li:hover {
+/* .collapsible-menu ul li:hover {
     transform: scale(1.2);
-}
+} */
 
 .collapsible-menu label{
     height: 22px;
@@ -192,3 +192,102 @@ nav h1{
     padding-left: 100px;
     font-size: 10px;
 }
+
+/*---------------------------------------*/
+/* Form Body */
+/*---------------------------------------*/
+.form-body {
+    padding:30px 40px;
+    color:#666;
+  }
+  
+  .form-group{
+    margin-bottom:20px;
+  }
+  .form-body .label-title {
+    color:black;
+    font-size: 17px;
+    font-weight: bold;
+  }
+  
+  .form-body .form-input {
+      font-size: 17px;
+      box-sizing: border-box;
+      width: 100%;
+      height: 34px;
+      padding-left: 10px;
+      padding-right: 10px;
+      color: #333333;
+      text-align: left;
+      border: 1px solid #d6d6d6;
+      border-radius: 4px;
+      background: white;
+      outline: none;
+  }
+
+  .horizontal-group .left{
+    float:left;
+    width:49%;
+  }
+  
+  .horizontal-group .right{
+    float:right;
+    width:49%;
+  }
+  
+  input[type="file"] {
+   outline: none;
+   cursor:pointer;
+   font-size: 17px;
+  }
+  
+  #range-label {
+   width:15%;
+   padding:5px;
+   background-color: #1BBA93;
+   color:white;
+   border-radius: 5px;
+   font-size: 17px;
+   position: relative;
+   top:-8px;
+  }
+  
+  
+  ::-webkit-input-placeholder {
+   color:#d9d9d9;
+  }
+  
+  /*---------------------------------------*/
+  /* Form Footer */
+  /*---------------------------------------*/
+  /* .form-footer {
+   clear:both;
+  } */
+  /*---------------------------------------*/
+  /* Form Footer */
+  /*---------------------------------------*/
+  
+  .form-footer span {
+    float:left;
+    margin-top: 10px;
+    color:#999;  
+    font-style: italic;
+    font-weight: thin;
+  }
+  
+  .btn {
+    text-align: center;
+    display:block;
+    padding:10px 20px;
+    background-color: black;
+    font-size:17px;
+    border:none;
+    color:#ffffff;
+    cursor:pointer;
+    float: center;
+  }
+  
+  .btn:hover {
+    background-color: #ffdacf;;
+    color:black;
+  }
