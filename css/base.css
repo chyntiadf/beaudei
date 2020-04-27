@@ -268,7 +268,6 @@ nav h1{
   /*---------------------------------------*/
   
   .form-footer span {
-    float:left;
     margin-top: 10px;
     color:#999;  
     font-style: italic;
@@ -276,6 +275,8 @@ nav h1{
   }
   
   .btn {
+    width: 100%;
+    margin-top: 30px;
     text-align: center;
     display:block;
     padding:10px 20px;
