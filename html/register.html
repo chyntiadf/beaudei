@@ -5,17 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="../css/base.css">
     <script src="../javascript/jquery.js"></script>
-    <title>Register</title>
-    <script> 
-        $(function(){
-          $("#header").load("shared/header.html"); 
-          $("#footer").load("shared/footer.html"); 
-        });
-        </script> 
+
+    <!--Input files below to automatically include the header and footer-->
+    <script src="shared/footer.js"></script>
+    <script src="shared/header.js"></script>
+    <script src="shared/loader.js"></script>
+    <title>Register</title> 
 </head>
 <body>
-    <div id="header"></div>
-
     <div id="content">
         <div>
             <form  class="signup-form" action="/register" method="post">
@@ -93,14 +90,8 @@
                     <span>* required</span>
                     <button type="submit" class="btn">Create</button>
                 </div>
-
             </form>
         </div>
     </div>
-
-    <div id="footer"></div>
-
-    
-
 </body>
 </html>
