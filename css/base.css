@@ -1,18 +1,18 @@
-*{
+* {
     font-family: 'Tenor Sans', sans-serif;
 }
 
-a{
+a {
     text-decoration: none;
     color: black;
 }
 
-body{
+body {
     background-color: #ffffff;
     margin: 0px;
 }
 
-.menu-content{
+.menu-content {
     max-height: 0px;
     overflow: hidden;
     padding: 0 0 0 50px;
@@ -23,7 +23,7 @@ body{
 }
 
 
-.collapsible-menu{
+.collapsible-menu {
     background-color: rgb(255, 255, 255);
     padding: 20px 30px;
     margin-bottom: 0px;
@@ -31,11 +31,11 @@ body{
     height: 50px;
 }
 
-input:checked ~ label{
+input:checked ~ label {
     background-image: url(../img/x.png);
 }
 
-input:checked ~ .menu-content{
+input:checked ~ .menu-content {
     max-height: 100%;
     
 }
@@ -49,11 +49,7 @@ input:checked ~ .menu-content{
     transition: transform .2s;
 }
 
-/* .collapsible-menu ul li:hover {
-    transform: scale(1.2);
-} */
-
-.collapsible-menu label{
+.collapsible-menu label {
     height: 22px;
     float: left;
     cursor: pointer;
@@ -66,36 +62,37 @@ input:checked ~ .menu-content{
     margin-top: 17px;
 }
 
-input#menu{
+input#menu {
     display: none;
 }
 
-.div-menu{
+.div-menu {
     text-align: center;
 }
-.navbar-icon{
+
+.navbar-icon {
     padding-left: 30px;
     padding-top: 10px;
     height: 20px;
     float: right;
 }
 
-#container{
+#container {
     color: #ffffff;
 }
 
-#freedelivery{
+#freedelivery {
     background-color: #ffdacf;
     color: black;
     text-align: center;
     padding: 10px;
 }
 
-nav h1{
+nav h1 {
     text-align: center;
 }
 
-#slider{
+#slider {
     width: 350px;
     height: 200px;
     position: relative;
@@ -105,7 +102,7 @@ nav h1{
     width: inherit;
 }
 
-.con-slider{
+.con-slider {
     max-width: 100%;
     max-height: 100%;
     position: absolute;
@@ -113,7 +110,7 @@ nav h1{
     transition: 1s;
 }
 
-.active{
+.active {
     opacity: 1;
 }
 
@@ -128,15 +125,16 @@ nav h1{
     margin: 0px;
 } 
  
-.lineSpanClass{ 
+.lineSpanClass { 
     background:#fff; 
     padding:0 10px; 
 }
 
-.button-container{
+.button-container {
     text-align: center;
 }
-.img-content{
+
+.img-content {
     padding: 30px;
     padding-right: 30px;
     width: inherit;
@@ -146,7 +144,7 @@ nav h1{
     color: black;
 }
 
-.img-button-rcmd{
+.img-button-rcmd {
     border: black;
     background-color: black;
     color: white;
@@ -165,29 +163,29 @@ nav h1{
     justify-content: space-around;
 }
 
-#responsive div{
+#responsive div {
      text-align: center;
 }
 
-#content{
+#content {
      padding-top: 40px;
      padding-left: 50px;
      padding-right: 50px;
      padding-bottom: 40px;
 }
 
-#footer{
+#footer {
     background-color: #ffdacf;
     color: black;
     padding: 30px;
 }
 
-.footer-nav{
+.footer-nav {
     text-align: left;
     padding-left: 30px;
 }
 
-#footer .footer-c{
+#footer .footer-c {
     float: right;
     padding-left: 100px;
     font-size: 10px;
@@ -199,18 +197,19 @@ nav h1{
 .form-body {
     padding:30px 40px;
     color:#666;
-  }
+}
   
-  .form-group{
+.form-group {
     margin-bottom:20px;
-  }
-  .form-body .label-title {
+}
+
+.form-body .label-title {
     color:black;
     font-size: 17px;
     font-weight: bold;
-  }
+}
   
-  .form-body .form-input {
+.form-body .form-input {
       font-size: 17px;
       box-sizing: border-box;
       width: 100%;
@@ -223,25 +222,25 @@ nav h1{
       border-radius: 4px;
       background: white;
       outline: none;
-  }
+}
 
-  .horizontal-group .left{
+.horizontal-group .left {
     float:left;
     width:49%;
-  }
+}
   
-  .horizontal-group .right{
+.horizontal-group .right {
     float:right;
     width:49%;
-  }
+}
   
-  input[type="file"] {
+input[type="file"] {
    outline: none;
    cursor:pointer;
    font-size: 17px;
-  }
+}
   
-  #range-label {
+#range-label {
    width:15%;
    padding:5px;
    background-color: #1BBA93;
@@ -250,31 +249,13 @@ nav h1{
    font-size: 17px;
    position: relative;
    top:-8px;
-  }
+}
   
-  
-  ::-webkit-input-placeholder {
+::-webkit-input-placeholder {
    color:#d9d9d9;
-  }
-  
-  /*---------------------------------------*/
-  /* Form Footer */
-  /*---------------------------------------*/
-  /* .form-footer {
-   clear:both;
-  } */
-  /*---------------------------------------*/
-  /* Form Footer */
-  /*---------------------------------------*/
-  
-  .form-footer span {
-    margin-top: 10px;
-    color:#999;  
-    font-style: italic;
-    font-weight: thin;
-  }
-  
-  .btn {
+}
+
+.btn {
     width: 100%;
     margin-top: 30px;
     text-align: center;
@@ -286,9 +267,10 @@ nav h1{
     color:#ffffff;
     cursor:pointer;
     float: center;
-  }
+    transition: background-color 0.5s ease;
+}
   
-  .btn:hover {
+.btn:hover {
     background-color: #ffdacf;;
     color:black;
-  }
+}
