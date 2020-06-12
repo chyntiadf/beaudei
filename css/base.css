@@ -274,3 +274,31 @@ input[type="file"] {
     background-color: #ffdacf;;
     color:black;
 }
+
+.promotionContainer {
+  margin-top: 20px;
+}
+
+.promotionItem {
+  margin-top: 10px;
+  display: flex;
+}
+
+.promotionImage {
+  width: 200px;
+  height: 200px;
+  background-color: blue;
+  margin-right: 20px;
+}
+
+.promotionContainer{
+  color: black;
+  padding-left: 30px;
+}
+
+.promotionCode {
+  color: white;
+  background: black;
+  padding: 10px;
+  
+}

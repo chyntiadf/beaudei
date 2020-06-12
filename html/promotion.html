@@ -4,24 +4,152 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Promotion</title>
+    <link rel="stylesheet" type="text/css" href="../css/base.css">
+    <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="../css/lightslider.css" />   
+    <script src="../javascript/jquery.js"></script>
+    <script src="../javascript/lightslider.js"></script>
+
+    <!--Input files below to automatically include the header and footer-->
+    <script src="shared/footer.js"></script>
+    <script src="shared/header.js"></script>
+    <script src="shared/loader.js"></script>
 </head>
+
 <body>
     <div id="container">
-        <ul id="lightSlider">
-            <li>
-                <img class="img-banner" src="../img/slider1.png" alt="slider1.png">
-            </li>
-            <li>
-                <img class="img-banner" src="../img/slider2.png" alt="slider2.png">
-            </li>
-            <li>
-                <img class="img-banner" src="../img/slider3.png" alt="slider3.png">
-            </li>
-            <li>
-                <img class="img-banner" src="../img/slider4.png" alt="slider4.png">
-            </li>
-        </ul>
-
-    
+        <div id="content">
+            <h2 class="lineClass">
+                <span class="lineSpanClass">PROMOTION</span>
+            </h2>
+            <div class="promotionContainer">
+              <div class="promotionItem">
+                <div class="promotionImage">
+                </div>
+                <div class="promotionContent">
+                  <h4>DIOR</h4>
+                  <h5>Save 15% off on All Items</h5>
+                  <ul>
+                    <li>Valid until 30 June 2020 or while stocks last</li>
+                    <li>Input voucher code when checkout</li>
+                  </ul>
+                  <div class="promotionCode">DIOR15</div>
+                </div>
+              </div>
+              <div class="promotionItem">
+                <div class="promotionImage">
+                </div>
+                <div class="promotionContent">
+                  <h4>DIOR</h4>
+                  <h5>Save 15% off on All Items</h5>
+                  <ul>
+                    <li>Valid until 30 June 2020 or while stocks last</li>
+                    <li>Input voucher code when checkout</li>
+                  </ul>
+                  <div class="promotionCode">DIOR15</div>
+                </div>
+              </div>
+              <div class="promotionItem">
+                <div class="promotionImage">
+                </div>
+                <div class="promotionContent">
+                  <h4>DIOR</h4>
+                  <h5>Save 15% off on All Items</h5>
+                  <ul>
+                    <li>Valid until 30 June 2020 or while stocks last</li>
+                    <li>Input voucher code when checkout</li>
+                  </ul>
+                  <div class="promotionCode">DIOR15</div>
+                </div>
+              </div>
+              <div class="promotionItem">
+                <div class="promotionImage">
+                </div>
+                <div class="promotionContent">
+                  <h4>DIOR</h4>
+                  <h5>Save 15% off on All Items</h5>
+                  <ul>
+                    <li>Valid until 30 June 2020 or while stocks last</li>
+                    <li>Input voucher code when checkout</li>
+                  </ul>
+                  <div class="promotionCode">DIOR15</div>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
 </body>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    $('#lightSlider').lightSlider({
+        adaptiveHeight:true,
+        item:1,
+        slideMargin:0,
+        loop:true
+    });
+});
+</script>
+
+<script>
+$(document).ready(function() {
+    $('#responsive').lightSlider({
+        item:4,
+        loop:false,
+        slideMove:2,
+        easing: 'cubic-bezier(0.25, 0, 0.25, 1)',
+        speed:600,
+        responsive : [
+            {
+                breakpoint:800,
+                settings: {
+                    item:3,
+                    slideMove:1,
+                    slideMargin:6,
+                }
+            },
+            {
+                breakpoint:480,
+                settings: {
+                  item:2,
+                  slideMove:1
+                }
+            }
+        ]
+    });  
+});
+</script>
+
+<script>
+$(document).ready(function() {
+    $('#responsive2').lightSlider({
+        item:4,
+        loop:false,
+        slideMove:2,
+        easing: 'cubic-bezier(0.25, 0, 0.25, 1)',
+        speed:600,
+        responsive : [
+            {
+                breakpoint:800,
+                settings: {
+                    item:3,
+                    slideMove:1,
+                    slideMargin:6,
+                }
+            },
+            {
+                breakpoint:480,
+                settings: {
+                    item:2,
+                    slideMove:1
+                }
+            }
+        ]
+    });  
+});
+</script>
+  
+
 </html>
