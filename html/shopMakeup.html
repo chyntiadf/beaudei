@@ -1,20 +1,229 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAKE UP</title>
     <link rel="stylesheet" type="text/css" href="../css/base.css">
+    <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="../css/lightslider.css" />   
     <script src="../javascript/jquery.js"></script>
+    <script src="../javascript/lightslider.js"></script>
 
     <!--Input files below to automatically include the header and footer-->
     <script src="shared/footer.js"></script>
     <script src="shared/header.js"></script>
     <script src="shared/loader.js"></script>
-    <title>Makeup</title> 
 </head>
+
 <body>
-    <div id="freedelivery"></div>
-    <h2 class="lineClass"><span class="lineSpanClass">RECOMENDED FOR YOU</span></h2>
-    
+    <div id="container">
+      <div id="content">
+        <h2 class="lineClass">
+          <span class="lineSpanClass">MAKE UP</span>
+        </h2>
+        <div class="filter">
+          <div class="underlinedTitle">
+            CATEGORIES
+          </div>
+          <div class="categoryTitle">
+            FACE
+          </div>
+          <ul>
+            <li>
+            <input type="checkbox">Contour</li>
+            <li>
+            <input type="checkbox">Highlighter</li>
+            <li>
+            <input type="checkbox">Face Palette</li>
+            <li>
+            <input type="checkbox">Face Primer</li>
+            <li>
+            <input type="checkbox">Setting Spary</li>
+          </ul>
+          <div class="categoryTitle">
+            LIPS
+          </div>
+          <ul>
+            <li>
+            <input type="checkbox">Lip Cream</li>
+            <li>
+            <input type="checkbox">Lip Tint</li>
+            <li>
+            <input type="checkbox">Lip Stain</li>
+          </ul>
+          <div class="categoryTitle">
+            EYEBROW
+          </div>
+          <ul>
+            <li>
+            <input type="checkbox">Brow Pomade</li>
+          </ul>
+          <div class="underlinedTitle">
+            BRAND
+          </div>
+          <div class="categoryTitle">
+            <input type="checkbox">BENEFIT
+          </div>
+          <div class="categoryTitle">
+            <input type="checkbox">DIOR
+          </div>
+          <br>
+          <button class="applyButton">
+            Apply
+          </button>
+          <button>
+            Reset
+          </button>
+        </div>
+        <div class="filterResult">
+          <div class="promotionContainer">
+            <div class="promotionItem">
+              <div class="promotionImage">
+              </div>
+              <div class="promotionContent">
+                <h4>BRAND</h4>
+                <h5>NAMA PRODUCT</h5>
+                <h6>IDR 900.000,-</h6>
+                <div class="promotionCode">Add To Cart</div>
+              </div>
+            </div>
+          </div> 
+          <div class="promotionContainer">
+            <div class="promotionItem">
+              <div class="promotionImage">
+              </div>
+              <div class="promotionContent">
+                <h4>BRAND</h4>
+                <h5>NAMA PRODUCT</h5>
+                <h6>IDR 900.000,-</h6>
+                <div class="promotionCode">Add To Cart</div>
+              </div>
+            </div>
+          </div> 
+          <div class="promotionContainer">
+            <div class="promotionItem">
+              <div class="promotionImage">
+              </div>
+              <div class="promotionContent">
+                <h4>BRAND</h4>
+                <h5>NAMA PRODUCT</h5>
+                <h6>IDR 900.000,-</h6>
+                <div class="promotionCode">Add To Cart</div>
+              </div>
+            </div>
+          </div> 
+          <div class="promotionContainer">
+            <div class="promotionItem">
+              <div class="promotionImage">
+              </div>
+              <div class="promotionContent">
+                <h4>BRAND</h4>
+                <h5>NAMA PRODUCT</h5>
+                <h6>IDR 900.000,-</h6>
+                <div class="promotionCode">Add To Cart</div>
+              </div>
+            </div>
+          </div> 
+          <div class="promotionContainer">
+            <div class="promotionItem">
+              <div class="promotionImage">
+              </div>
+              <div class="promotionContent">
+                <h4>BRAND</h4>
+                <h5>NAMA PRODUCT</h5>
+                <h6>IDR 900.000,-</h6>
+                <div class="promotionCode">Add To Cart</div>
+              </div>
+            </div>
+          </div> 
+          <div class="promotionContainer">
+            <div class="promotionItem">
+              <div class="promotionImage">
+              </div>
+              <div class="promotionContent">
+                <h4>BRAND</h4>
+                <h5>NAMA PRODUCT</h5>
+                <h6>IDR 900.000,-</h6>
+                <div class="promotionCode">Add To Cart</div>
+              </div>
+            </div>
+          </div>      
+        </div>
+      </div>
+    </div>
 </body>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    $('#lightSlider').lightSlider({
+        adaptiveHeight:true,
+        item:1,
+        slideMargin:0,
+        loop:true
+    });
+});
+</script>
+
+<script>
+$(document).ready(function() {
+    $('#responsive').lightSlider({
+        item:4,
+        loop:false,
+        slideMove:2,
+        easing: 'cubic-bezier(0.25, 0, 0.25, 1)',
+        speed:600,
+        responsive : [
+            {
+                breakpoint:800,
+                settings: {
+                    item:3,
+                    slideMove:1,
+                    slideMargin:6,
+                }
+            },
+            {
+                breakpoint:480,
+                settings: {
+                  item:2,
+                  slideMove:1
+                }
+            }
+        ]
+    });  
+});
+</script>
+
+<script>
+$(document).ready(function() {
+    $('#responsive2').lightSlider({
+        item:4,
+        loop:false,
+        slideMove:2,
+        easing: 'cubic-bezier(0.25, 0, 0.25, 1)',
+        speed:600,
+        responsive : [
+            {
+                breakpoint:800,
+                settings: {
+                    item:3,
+                    slideMove:1,
+                    slideMargin:6,
+                }
+            },
+            {
+                breakpoint:480,
+                settings: {
+                    item:2,
+                    slideMove:1
+                }
+            }
+        ]
+    });  
+});
+</script>
+  
+
 </html>
